@@ -1,4 +1,4 @@
-<!-- Urvi Awasthi; March 14th, 2019, Vending Machine Database -->
+<!-- Urvi Awasthi, March 14th, 2019 -->
 
 <?php  
 	include "config.php";
