@@ -29,8 +29,8 @@
 		$pw= $_POST['password'];
 		$fn= $_POST['fullname'];
 
-		$sql = "INSERT INTO register (fullname, username, password, haveTaken, gradeGiven)
-		VALUES('$fn','$un','$pw','no', '0')";
+		$sql = "INSERT INTO register (fullname, username, password)
+		VALUES('$fn','$un','$pw')";
 
 		mysqli_query($conn, $sql);
 
