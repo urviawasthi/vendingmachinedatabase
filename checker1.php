@@ -1,5 +1,6 @@
 <?php 
 	//creating a hash function
+	/* removing the encrypt function because some servers do not support the md functions
 	function encrypt($text) 
 	{
 		$newText = 0; 
@@ -11,7 +12,7 @@
 		
 		return $newText; 
 	}
-	
+	*/
 	
 	session_start();
 
@@ -19,7 +20,7 @@
 	include "config.php";
 	$un = $_POST['username'];
 	$_SESSION["username"] = $un;
-	$pw = encrypt($_POST['password']);
+	$pw = $_POST['password'];
 	mysqli_select_db($conn, 'login');
 	$sql="SELECT * FROM register WHERE username='$un' AND password = '$pw'";
 	$result = mysqli_query($conn, $sql);
