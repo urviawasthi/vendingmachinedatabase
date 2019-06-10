@@ -6,6 +6,7 @@
 	<?php 
  
 	//hash function
+	/*
 	function encrypt($text) 
 	{
 		$newText = 0; 
@@ -17,7 +18,7 @@
 		
 		return $newText; 
 	}
-	
+	*/
 	
 	//inserts user information into login database
 		include "config.php";
@@ -25,7 +26,7 @@
 		
 		// sql to create table
 		$un= $_POST['username'];
-		$pw= encrypt($_POST['password']);
+		$pw= $_POST['password'];
 		$fn= $_POST['fullname'];
 
 		$sql = "INSERT INTO register (fullname, username, password, haveTaken, gradeGiven)
