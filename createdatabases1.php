@@ -10,7 +10,7 @@
 		id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 		fullname VARCHAR(100) NOT NULL,
 		username VARCHAR(100) NOT NULL,
-		password VARCHAR(100) NOT NULL,
+		password VARCHAR(100) NOT NULL
 		)";
 	mysqli_query($conn, $sql);
 
